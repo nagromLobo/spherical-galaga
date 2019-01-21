@@ -622,8 +622,8 @@ PlayerSettings:
     UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: 907aeff8-5624-4d6a-93cd-f3b140b80026
-  projectName: Spherical Galaga
+  cloudProjectId: 79b2e987-c691-41e2-979b-1a0ddab91e60
+  projectName: Spherical Galaga (1)
   organizationId: laz-hackathon8
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
