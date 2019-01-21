@@ -1,0 +1,265 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1839377955011182}
+  m_IsPrefabAsset: 1
+--- !u!1 &1839377955011182
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4048734425723206}
+  - component: {fileID: 65612442846676054}
+  - component: {fileID: 212309038305857912}
+  - component: {fileID: 114394823991137508}
+  - component: {fileID: 114788661853616908}
+  - component: {fileID: 114495570935310654}
+  - component: {fileID: 54937149438376258}
+  - component: {fileID: 114590809507881108}
+  - component: {fileID: 114452140618848552}
+  - component: {fileID: 114229270740041776}
+  - component: {fileID: 114368793785945750}
+  - component: {fileID: 114360158786044142}
+  - component: {fileID: 114247958854606266}
+  m_Layer: 8
+  m_Name: HorizontalBroadsideEnemy
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4048734425723206
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1839377955011182}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.56, z: -5.46}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &54937149438376258
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1839377955011182}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &65612442846676054
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1839377955011182}
+  m_Material: {fileID: 13400000, guid: ad53364904912a7489f01bdf7e574818, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.38, y: 0.4, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114229270740041776
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1839377955011182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24d0a592a169158458a3baf8c2ba2507, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  state: 0
+--- !u!114 &114247958854606266
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1839377955011182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10b2baa596cd0485aa3dd913346a06d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thetaRange: 0.1
+  rhoRange: 0.1
+--- !u!114 &114360158786044142
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1839377955011182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40185bd85b848424ba40dec733476551, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  repeats: 0
+  states: []
+  currentState: 0
+--- !u!114 &114368793785945750
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1839377955011182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d785aa2d1dff1404f9d0808e3c91e814, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 60
+  waveDirection: 3
+  amplitude: 0
+  period: 0.1
+  distance: 1
+--- !u!114 &114394823991137508
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1839377955011182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 800df164f880d24409a48e7e59441feb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletObject: {fileID: 1783833175707274, guid: 972f21a159778f841b7300af0f01e432,
+    type: 2}
+  bulletSprite: {fileID: 21300318, guid: 2d8bbda453d7fe448952817630cfe0d4, type: 3}
+  bulletClip: {fileID: 0}
+  speedMagnitude: 1
+--- !u!114 &114452140618848552
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1839377955011182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a3a442df188e4656a7d55f0104128ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOnSphere: 0
+  theta: 0
+  rho: 0
+  radius: 0
+  velocity: {x: 0, y: 0, z: 0}
+  gravity: 0
+  onPositiveSide: 0
+--- !u!114 &114495570935310654
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1839377955011182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39cc0dae26a68d24ca4a607d34f4d851, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointsWorth: 50
+  floatingScorePrefab: {fileID: 1522211191689584, guid: 7b4830c94f52bd34588fde289b3bb9c1,
+    type: 2}
+  canFire: 0
+  isFiring: 0
+  delayBetweenBullets: 0
+--- !u!114 &114590809507881108
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1839377955011182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f974b9c8b012148af2c1623a38ca99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationInterval: 0.1
+  sprites:
+  - {fileID: 21300186, guid: 2d8bbda453d7fe448952817630cfe0d4, type: 3}
+  - {fileID: 21300188, guid: 2d8bbda453d7fe448952817630cfe0d4, type: 3}
+--- !u!114 &114788661853616908
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1839377955011182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d97c75cb499ff23468575707334f1d17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  remainingHealth: 3
+  deathClip: {fileID: 8300000, guid: aa05c510f4e016c4692a9b62c1074052, type: 3}
+  deathAnimation: {fileID: 1855177129525570, guid: 61ba888f328a41243a9de2588f2a86cd,
+    type: 2}
+  damageAnimationDuration: 1
+  damageAnimationPeriod: 0.25
+  damageAnimationColor: {r: 1, g: 0, b: 0, a: 1}
+--- !u!212 &212309038305857912
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1839377955011182}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300186, guid: 2d8bbda453d7fe448952817630cfe0d4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.15, y: 0.16}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0

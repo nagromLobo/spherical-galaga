@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1927885662811474}
+  m_IsPrefabAsset: 1
+--- !u!1 &1927885662811474
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4190502911821544}
+  - component: {fileID: 114619751623541030}
+  m_Layer: 0
+  m_Name: EnemySpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4190502911821544
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1927885662811474}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114619751623541030
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1927885662811474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1fee9746c87e094084fe0d42a58b870, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnWaveInfos:
+  - type: 2
+    spawnDelay: 0.25
+    size: 10
+  - type: 2
+    spawnDelay: 0.3
+    size: 5
+  spawnAltitude: 12
+  minSpawnTheta: 0.7853982
+  maxSpawnTheta: 2.3561945
+  spawnThetaDelta: 0.3926991
+  spawnRhoDelta: 0.3926991
+  delayBetweenWaves: 10
+  enemyPrefab: {fileID: 1839377955011182, guid: 5cc5507119b8058489d7b2791088201e,
+    type: 2}
+  fodderEnemy: {fileID: 1839377955011182, guid: f49ecf7e5af7a4e4182264fe2f9cdda7,
+    type: 2}
+  horizonalBroadsideEnemy: {fileID: 1839377955011182, guid: 5a52bf02deac746b892468efd16dfab1,
+    type: 2}
+  vertialBroadsideEnemy: {fileID: 1839377955011182, guid: 5448a812ddf95463aabe0fefa137ba35,
+    type: 2}
+  chaserEnemy: {fileID: 1839377955011182, guid: a9ed512ef64bf424697dcb89bc834781,
+    type: 2}
+  canSpawn: 1

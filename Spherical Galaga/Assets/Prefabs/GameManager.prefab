@@ -1,0 +1,155 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1435985475291948}
+  m_IsPrefabAsset: 1
+--- !u!1 &1435985475291948
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4589210572925988}
+  - component: {fileID: 114720354798663978}
+  - component: {fileID: 114575822039452856}
+  - component: {fileID: 114349313686908712}
+  - component: {fileID: 114371696945425296}
+  - component: {fileID: 114310072036037456}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4589210572925988
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1435985475291948}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114310072036037456
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1435985475291948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df7fe26b05a88482888a75db5ec5897f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delayBeforeFirstSpawn: 5
+  minDelayBetweenWaves: 10
+  maxDelayBetweenWaves: 20
+  delayBetweenSubwaves: 2.5
+  minSubwaves: 3
+  maxSubwaves: 3
+  minRangeToPole: 0.62831855
+  waveInfo:
+    type: 0
+    spawnDelay: 0.3
+    size: 8
+--- !u!114 &114349313686908712
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1435985475291948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab36e5c805718604885b2b7368dea7cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreDisplay: {fileID: 0}
+  efficiencyDisplay: {fileID: 0}
+  score: 0
+  totalPossibleScore: 0
+--- !u!114 &114371696945425296
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1435985475291948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1fee9746c87e094084fe0d42a58b870, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnWaveInfos:
+  - type: 1
+    spawnDelay: 0.4
+    size: 6
+  - type: 2
+    spawnDelay: 0.5
+    size: 1
+  - type: 1
+    spawnDelay: 0.4
+    size: 6
+  spawnAltitude: 12
+  timeToFirstSpawn: 10
+  minSpawnTheta: 0.7853982
+  maxSpawnTheta: 2.3561945
+  spawnThetaDelta: 0.3926991
+  spawnRhoDelta: 0.3926991
+  delayBetweenWaves: 12
+  difficultyMultiplier: 0.9
+  timeBetweenHardnessIncrease: 5
+  minimumDelayBetweenWaves: 2
+  enemyPrefab: {fileID: 1839377955011182, guid: 5cc5507119b8058489d7b2791088201e,
+    type: 2}
+  fodderEnemy: {fileID: 1839377955011182, guid: f49ecf7e5af7a4e4182264fe2f9cdda7,
+    type: 2}
+  horizonalBroadsideEnemy: {fileID: 1839377955011182, guid: 5a52bf02deac746b892468efd16dfab1,
+    type: 2}
+  vertialBroadsideEnemy: {fileID: 1839377955011182, guid: 5448a812ddf95463aabe0fefa137ba35,
+    type: 2}
+  chaserEnemy: {fileID: 1839377955011182, guid: a9ed512ef64bf424697dcb89bc834781,
+    type: 2}
+  canSpawn: 1
+--- !u!114 &114575822039452856
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1435985475291948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bee5962a2f576d74697c366a5050e08a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114720354798663978
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1435985475291948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2c23f52434aa4c4ca236a36c986ba4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifePrefab: {fileID: 1927121863729860, guid: adfaf5873acbdf04c9481916ec7e09ea, type: 2}
+  playerPrefab: {fileID: 1802168941161364, guid: 8f136227879274149820bfdd226cf111,
+    type: 2}
+  planet: {fileID: 0}
+  numberOfLives: 3
+  invincibleDuration: 3
+  playerSpawnClip: {fileID: 8300000, guid: 6ea75914d16e4c24e8f3f46ad907f99a, type: 3}
+  currentPlayer: {fileID: 0}

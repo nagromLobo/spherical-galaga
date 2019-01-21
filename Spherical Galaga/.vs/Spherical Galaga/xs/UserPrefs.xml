@@ -1,0 +1,24 @@
+﻿<Properties StartupConfiguration="{C1104B33-CECF-61BF-EA20-E31932C662F1}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/EnemySpawner.cs">
+    <Files>
+      <File FileName="Assets/Scripts/MovementState.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/SpherePhysics.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/AI/SpawnFodderAtPlayer.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/EnemySpawner.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ChaserMovementState.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/VerticalBroadsider.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/PlayerLives.cs" Line="36" Column="30" />
+      <File FileName="Assets/Scripts/HorizontalBroadsider.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/nagromlobo/projects/sphericalGalaga/Spherical Galaga/Assets/Scripts/MovementStateMachine.cs" relfile="Assets/Scripts/MovementStateMachine.cs" line="28" column="12" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
